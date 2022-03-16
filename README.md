@@ -1,2 +1,3 @@
-# php-boilerplate
-A simple php boilerplate, hosted on a apache server. Included with tailwind css.
+# PHP Boilerplate
+
+Inspired by [Vincent Lammens](https://vincentlammens.be)
