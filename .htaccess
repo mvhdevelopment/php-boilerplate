@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^$ pages/index.php [L,QSA]
+RewriteRule ^([^\.]+)$ pages/$1.php [L,QSA]
+RewriteRule ^([^\.]+)/([^\.]+)$ pages/$1/$2.php [L,QSA]
+
+ErrorDocument 403 /pages/error/403.php
+ErrorDocument 404 /pages/error/404.php
+ErrorDocument 500 /pages/error/500.php
